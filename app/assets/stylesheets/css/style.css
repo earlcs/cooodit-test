@@ -20405,10 +20405,11 @@ pre[class*="language-"] {
 	border : none;
 	position: fixed;
 	top: -900px;
-  left : 30%;
+  /*left : 30%;*/
   transition : 1.5s;
   border-radius: 0.5em;
   z-index: 2000;
+	transform: translate(-50%, -50%);
 }
 
 #contact_formulaire .col-formulaire{
@@ -20493,10 +20494,10 @@ textarea[class=form-control]:hover{
 	border : none;
 	position: fixed;
 	top: -900px;
-  left : 30%;
   transition : 1.5s;
   border-radius: 0.5em;
   z-index: 2000;
+  transform: translate(-50%, -50%);
   
 }
 
