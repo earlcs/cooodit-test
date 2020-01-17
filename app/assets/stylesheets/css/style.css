@@ -20628,6 +20628,7 @@ option[class=subject]{
 #popUp {
   position: fixed;
   max-width: 320px;
+  min-width: 250px;
   height: auto;
   background: rgba(236, 240, 241, 1);
   /*border: 7px solid #fff;*/
@@ -20697,7 +20698,7 @@ option[class=subject]{
 
 @media all and (max-width: 900px) {
   #popUp {
-    margin-left: -425px;
+    margin-bottom: -425px;
   }
   /*#plus {
     margin-left: 0px;
@@ -20723,6 +20724,7 @@ option[class=subject]{
 #help {
   position: fixed;
   max-width: 320px;
+  min-width: 250px;
   height: auto;
   background: rgba(236, 240, 241, 1);
   /*border: 7px solid #fff;*/
@@ -20883,9 +20885,9 @@ option[class=subject]{
 }
 
 
-.coursestest-container {
+/*.coursestest-container {
 	
-}
+}*/
 
 .coursetest {
 	background-color: #fff;
