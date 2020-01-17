@@ -20398,8 +20398,8 @@ pre[class*="language-"] {
 
 #contact_formulaire{
   height : auto;
-  width : 40%;
-  min-width: 250px;
+  width : 30%;
+  min-width: 340px;
 	background-color : #b2bec3;
 	color : #fff;
 	border : none;
@@ -20424,9 +20424,9 @@ pre[class*="language-"] {
 
 #contact-form{
   padding-top : 20px;
-  margin-left: 15%;
+  margin-left: 10%;
   max-width : 100%;
-  width : 70%;
+  width : 80%;
 }
 
 #contact-form label{
@@ -20487,8 +20487,8 @@ textarea[class=form-control]:hover{
 
 #program_formulaire{
   height : auto;
-  width : 40%;
-  min-width: 250px;
+  width : 30%;
+  min-width: 320px;
 	background-color : #b2bec3;
 	color : #fff;
 	border : none;
@@ -20503,9 +20503,9 @@ textarea[class=form-control]:hover{
 
 #program-form{
   padding-top : 20px;
-  margin-left: 15%;
+  margin-left: 10%;
   max-width : 100%;
-  width : 70%;
+  width : 80%;
 }
 
 #program-form label{
