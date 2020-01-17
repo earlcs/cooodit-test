@@ -1,0 +1,394 @@
+
+<!-- cover -->
+<section class="p-0">
+  <div class="swiper-container text-white"
+    data-top-top="transform: translateY(0px);" 
+    data-top-bottom="transform: translateY(250px);">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide vh-100 ">
+        <div class="image image-overlay image-zoom" style="background-image:linear-gradient( to right bottom,
+        rgba(0, 0, 0, 0.3),
+        #161c1d  ),url(../../assets/cooodit/cooodit-cover.png)"></div>
+        <div class="caption">
+            <div class="container">
+              <div class="row vh-100">
+                <div class="col-md-12 align-self-center text-center" data-swiper-parallax-y="-250%">
+                  <h1 class="display-3">Nous apprenons aux enfants à <b class="font-weight-bold text-primary" id="typed"></b></h1>
+                  <div id="typed-strings">
+                      <p>coder</p>
+                      <p>imaginer</p>
+                      <p>créer</p>
+                  </div>
+                  <p class="text-white">Découvrez nos ateliers pour apprendre à coder pour enfants de 7 à 18 ans</p>
+                  <!--<a href="<%=programs_path%>" class="btn btn-primary btn-lg  btn-rounded px-5" style="font-weight:bold"> VOIR NOS PROGRAMMES</a>-->
+                  <a onclick="openProgram(); on()" class="btn btn-primary btn-lg  btn-rounded px-5" style="font-weight:bold"> VOIR NOS PROGRAMMES</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-footer text-white">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col text-center">
+              <!--<div class="mouse"></div>-->
+              <!-- Bouton scroll -->
+              <a class="arrow-wrap" onclick="scrollDown()">
+                <i class="fa fa-arrow-down"></i>
+              </a>
+              <!-- / Bouton scroll -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / cover -->
+
+<!-- notification -->
+
+  <div id="popUp">
+      <div id="close" class="close" onclick="closeNotif()"><i class="fa fa-times"></i></div>
+      <!--<div id="new"><span>NEW!</span></div>-->
+      <div class="popUp-info">Pour plus d&apos;informations sur les ateliers.</div>
+      
+      <div>
+        <center><button class="btn btn-primary" id="syllabus" onclick="openNotif()">Syllabus</button></center>
+      </div>
+  </div>
+
+  <div id="help">
+      <div id="close" class="close" onclick="closeNotif()"><i class="fa fa-times"></i></div>
+      <div class="help-info">Besoin d&apos;aide pour choisir le meilleur atelier pour votre enfant ? Laissez votre e-mail ci-dessous et nous vous contacterons rapidement.</div>
+      <div class="col-formulaire">
+        <label for="nom">Nom*</label>
+        <input type="text" class="form-control" id="nom" name="nom" placeholder="NOM" required/>
+        <label for="prénom">Prénom*</label>
+        <input type="text" class="form-control" id="prénom" name="prénom" placeholder="Prénom" required/>
+      </div>
+      <div style="padding: 0 20px 0 20px;">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="votre_email@mail.com" required/><br>
+      </div>
+      <div>
+        <center><button class="btn btn-primary">Envoyer</button></center>
+      </div>
+  </div>
+
+  <script>
+
+    // popUp appear after 60 seconds
+    $("#popUp").css('margin-bottom','-200px');
+    // setTimeout(function(){
+    //  $('#popUp').css('margin-bottom','0px');
+    //},60000);
+
+    $("#help").css('margin-bottom','-425px');
+    // function openNotif()
+    
+  </script>
+  
+<!-- / notification -->
+
+<!-- cta -->
+<section id="separator-top">
+  <div class="container">
+    <div class="boxed bg-cooodit p-5 text-white " data-aos="zoom-in" >
+      <div class="row justify-content-between align-items-center text-center text-md-left">
+        <div class="col-md-3">
+          <h4 ><strong>Stages de Noël</strong> </h4>
+        </div>
+        <div class="col-md-6 text-center ">
+          <h4><small class="text">Du lundi 23 décembre au 03 Janvier</small> </h4>
+          <!--<h4><small class="text-white">Du lundi 23 décembre au 03 Janvier</small> </h4>-->
+        </div>
+        <div class="col-md-3 text-md-right mt-2 mt-md-0 ">
+          <a href="https://cooodit.typeform.com/to/sLbWVh" class="btn btn-white btn-rounded px-1">J&apos;inscris mon enfant</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / cta -->
+
+
+
+<div class="row justify-content-center">
+  <div class="col-md-10 col-lg-8 text-center">
+    <h2>Une expérience <b>complète et immersive 🚀</b></h2>
+    <p>La pédagogie de cooodit se base sur six éléments fondamentaux adaptés aux exigences du numérique et aux <mark class="bg-yellow2">meilleurs standards de formation.</mark></p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-4 text-center">
+        <i class="svg-icon fs-50 text-primary mb-2">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+          <rect x="10" y="45" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="12" height="18"/>
+          <rect x="42" y="18" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="12" height="45"/>
+          <rect x="26" y="32" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="12" height="31"/>
+          <g>
+            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="14" y1="38" x2="51" y2="1"/>
+            <polyline fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="40,1 51,1 51,12 
+                "/>
+          </g>
+          </svg>
+        </i>
+        <h4 class="fs-18 text-uppercase font-weight-normal"> APPRENEZ PAR <b class="text-primary">LA PRATIQUE</b></h4>
+        <p>Vos formateurs sont des développeurs qui enseigneront vos enfants en présentiel des compétences directement applicables en entreprise.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="svg-icon fs-50 text-primary mb-2">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+          <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M54.999,36.001C55,50.913,42.912,63,28,62.999
+            C13.087,63,1,50.912,1.001,36C1,21.088,13.088,9,28,9.001V36L54.999,36.001z"/>
+          <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M63,28C63.001,13.087,50.914,0.998,36.001,1v27H63z"
+            />
+          </svg>
+        </i>
+        <h4 class="fs-18 text-uppercase font-weight-normal">PÉDAGOGIE DE <b class="text-primary">PROJET</b></h4>
+        <p>la pédagogie de projet consiste à mettre les élèves en posture active autour d’un projet commun permettant d’unir le collectif.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="svg-icon fs-50 text-primary mb-2">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+         <rect x="1" y="1" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="46" height="62"/>
+         <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="9" y1="63" x2="9" y2="2"/>
+         <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="14" y1="15" x2="42" y2="15"/>
+         <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="14" y1="21" x2="42" y2="21"/>
+         <polygon fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="55,1 55,54 59,62 63,54 63,1 "/>
+         <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="55" y1="11" x2="63" y2="11"/>
+         </svg>
+
+        </i>
+        <h4 class="fs-18 text-uppercase font-weight-normal">FORMATIONS ADAPTÉES À <b class="text-primary">TOUS LES NIVEAUX</b></h4>
+        <p>Aucun prérequis n&apos;est nécessaire, juste une bonne humeur et beaucoup de motivation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-4 text-center">
+        <i class="svg-icon fs-50 text-primary mb-2">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+         <circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="51" cy="13" r="12"/>
+         <circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="11" cy="42" r="10"/>
+         <circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="48" cy="55" r="8"/>
+         <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="40" y1="54" x2="20" y2="46"/>
+         <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="19" y1="35" x2="41" y2="21"/>
+         </svg>
+          
+        </i>
+        <h4 class="fs-18 text-uppercase font-weight-normal">ACCÈS À VIE <b class="text-primary">À NOTRE COMMUNAUTÉ D&apos;ALUMNI </b></h4>
+        <p>Nos élèves ont accès à notre communauté, même une fois qu’ils ont terminé le programme.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="svg-icon fs-50 text-primary mb-2">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+              <polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="32,12 32,32 41,41 "/>
+              <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="4" y1="32" x2="8" y2="32"/>
+              <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="56" y1="32" x2="60" y2="32"/>
+              <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="32" y1="60" x2="32" y2="56"/>
+              <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="32" y1="8" x2="32" y2="4"/>
+              <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,63c17.121,0,31-13.879,31-31S49.121,1,32,1"/>
+              <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32,63C14.879,63,1,49.121,1,32
+                c0-6.713,2.134-12.926,5.759-18l5.62-5.621"/>
+              <polyline fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="13,19 13,8 2,8 
+                "/>
+              </svg>
+        </i>
+        <h4 class="fs-18 text-uppercase font-weight-normal">AGENDA À  <b class="text-primary">LA CARTE</b></h4>
+        <p>Choisissez de participer à nos cours du soir en semaine ou en journée le samedi et le mercredi.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="svg-icon fs-50 text-primary mb-2">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                <g>
+                  <rect x="1" y="1" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="62"/>
+                </g>
+                <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="18" y1="8" x2="18" y2="28"/>
+                <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="28" y1="18" x2="8" y2="18"/>
+                <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="56" y1="18" x2="36" y2="18"/>
+                <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="10" y1="54" x2="26" y2="38"/>
+                <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="10" y1="38" x2="26" y2="54"/>
+                <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="36" y1="43" x2="56" y2="43"/>
+                <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="36" y1="49" x2="56" y2="49"/>
+                </svg>
+        </i>
+        <h4 class="fs-18 text-uppercase font-weight-normal"> RÉDUCTION DE <b class="text-primary">10%</b></h4>
+        <p>-10% pour que les filles s’intéressent aussi aux technologies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- accordion pricing -->
+<section class="bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 text-center">
+        <h2>NOS <b>ATELIERS 👩‍💻👨‍💻 </b></h2>
+        <p> <mark class="bg-yellow2">3 types d'ateliers</mark> permettant à vos enfants d'acquérir des compétences rares
+          <mark class="bg-yellow2">quelque soit leurs niveau initial.</mark></p>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-12 col-lg-4" >
+        <div class="card card-price rising">
+            
+          <div class="card-body">
+           
+            <h5 class="card-title text-center"> <strong>Ateliers Découverte</strong></h5> <br>
+            <ul class="list-group list-group-minimal text-muted">
+             
+              <li class="list-group-item text-justify">un atelier de 1h30 récurrent et ouverts à tous les enfants qui permet de s'initier à la programmation et au développement de jeux.</li>
+              <br>
+              <li class="list-group-item text-center"><i class="far fa-calendar-check text-teal"></i> Inscription ouverte toute l'année.</li>
+            </ul>
+          </div>
+          
+          <a href="<%=deco_path%>" class="card-footer bg-cooodit">
+              <strong class="text-white">EN SAVOIR PLUS</strong>
+            </a>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <div class="card card-price rising">
+            
+          <div class="card-body">
+           
+            <h5 class="card-title text-center"><strong>Ateliers Hebdomadaires</strong></h5><br>
+            <ul class="list-group list-group-minimal text-muted">
+              <li class="list-group-item text-justify"> 1h30 d’atelier par semaine pendant la période scolaire, du lundi au samedi, de septembre à juin, de 7 à 18 ans.</li> 
+              <br>
+              <li class="list-group-item text-center"><i class="far fa-calendar-check text-teal"></i>  Inscription ouverte jusqu’au 31/12/2019.</li>
+              
+            </ul>
+          </div>
+        
+          <a href="<%=hebdo_path%>" class="card-footer bg-cooodit">
+              <strong class="text-white">EN SAVOIR PLUS</strong>
+            </a>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <div class="card card-price rising">
+            
+          <div class="card-body">
+           
+            <h5 class="card-title text-center"><strong>Bootcamps & Stages</strong></h5><br>
+            <ul class="list-group list-group-minimal text-muted">
+              <li class="list-group-item text-justify">Pendant les vacances scolaires, vos enfants réalisent un projet de leurs choix durant 2 jours ou une semaine.</li><br>
+              <li class="list-group-item text-center"><i class="far fa-calendar-check text-teal"></i>  Inscription ouverte toute l&apos;année.</li>
+            </ul>
+          </div>
+          <br>
+          <a href="<%=bootcamp_path%>" class="card-footer bg-cooodit">
+              <strong class="text-white">EN SAVOIR PLUS</strong>
+            </a> 
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<!-- / accordion pricing -->
+
+<!-- faq -->
+<section class="bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-6 text-md-center">
+        <h2>👉  « Dites, ... » - les <strong class="font-weight-bold">questions </strong> qu’on nous pose le plus souvent.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="accordion-group accordion-group-minimal" data-accordion-group>
+          <div class="accordion" data-accordion data-aos="fade-up">
+            <div class="accordion-control" data-control>
+              <h5> Quel type de connaissances les enfants peuvent-ils obtenir chez Cooodit ?</h5>
+            </div>
+            <div class="accordion-content" data-content>
+              <div class="accordion-content-wrapper">
+                <p class="text-justify">Nos étudiants apprennent la pensée algorithmique, qui est une connaissance très précieuse, même si pas tous deviendront des programmeurs. Sur la base de cette connaissance, pendant que les enfants apprennent en jouant, nous leur apprenons de nouveaux langages de programmation et technologies en fonction de leur âge et de leur niveau de compétences.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" data-accordion data-aos="fade-up">
+            <div class="accordion-control" data-control>
+              <h5>Y a-t-il des compétences ou des connaissances requises pour postuler ?</h5>
+            </div>
+            <div class="accordion-content" data-content>
+              <div class="accordion-content-wrapper">
+                <p class="text-justify">Aucune formation préliminaire, connaissances mathématiques ou informatiques exceptionnelles n'est requise. N'importe qui peut programmer, il vaut la peine de lui donner un essai !</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="accordion-group accordion-group-minimal" data-accordion-group>
+          <div class="accordion" data-accordion data-aos="fade-up">
+            <div class="accordion-control" data-control>
+              <h5> À quel âge puis-je commencer à programmer? Quand est-ce que je peux commencer à fréquenter Cooodit?</h5>
+            </div>
+            <div class="accordion-content" data-content>
+              <div class="accordion-content-wrapper">
+                <p class="text-justify">Nos plus jeunes participants ont 7 ans, mais tu peux commencer à programmer à tout âge, il n&apos;est jamais trop tard </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" data-accordion data-aos="fade-up">
+            <div class="accordion-control" data-control>
+              <h5>Y a-t-il des devoirs à la maison ? Des notes ?</h5>
+            </div>
+            <div class="accordion-content" data-content>
+              <div class="accordion-content-wrapper">
+                <p class="text-justify">Non ! nous n&apos;imposons pas de travail personnel en dehors des ateliers. Néanmoins, il est tout à fait possible de continuer leur apprentissage à la maison</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / faq -->
+<!-- cta -->
+<section class="separator-top">
+  <div class="container">
+    <div class="boxed bg-cooodit p-5 text-white " data-aos="zoom-in">
+      <div class="row justify-content-between align-items-center text-center text-md-left">
+        <div class="col-md-3">
+          <h4 ><strong>Stages de Noël</strong> </h4>
+        </div>
+        <div class="col-md-6 text-center ">
+        <h4><small class="text">Du lundi 23 décembre au 03 Janvier</small> </h4>
+          <!--<h4><small class="text-white">Du lundi 23 décembre au 03 Janvier</small> </h4>-->
+        </div>
+        <div class="col-md-3 text-md-right mt-2 mt-md-0">
+          <a href="" class="btn btn-white btn-rounded px-1">J&apos;inscris mon enfant</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / cta -->

@@ -1,0 +1,39 @@
+<!-- Formulaire Programme pop-up -->
+<div id="overlay"></div>
+  <div id="program_formulaire">
+  <!--<button id="closeProgram" onclick="closeProgram()">X</button>-->
+  <div id="close" class="close" onclick="closeProgram(); off()"><i class="fa fa-times"></i></div>
+			<form id="program-form" >
+				<aside class="alert d-none">
+				</aside>
+				<ul class="list-unstyled">
+					<li class="form-group">
+						<label for="name">Nom*</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="NOM" required/>
+          </li>
+          <li class="form-group">
+						<label for="name">Prénom*</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Prénom" required/>
+					</li>
+					<li class="form-group">
+						<label for="email">Email*</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="votre_email@mail.com" required/>
+          </li>
+					<li class="form-group">
+            <label   for="subject">Quel programme vous intéresse ? *</label>
+            <select class="subject" id="subject">
+              <option value="1" class="subject">Ateliers Hebdomadaires</option>
+              <option value="2" class="subject">Ateliers Découverte</option>
+              <option value="3" class="subject">Stages & Bootcamp</option>
+            </select>
+					</li>
+					<li class="form-group">
+            <center>
+              <a href="<%=merci_path%>" class="btn btn-primary" onclick="window.open('https://drive.google.com/file/d/1I0nvK0HVrJTw4epGBVitM5hWQeBDzaWb/view','_blank')">Envoyer</a>
+              <!--<a href="<%=merci_path%>" class="btn btn-primary" onclick="openMerci()">Envoyer</a>-->
+            </center>
+					</li>
+				</ul>
+			</form>
+  </div>
+  <!-- / Formulaire Programme pop-up -->

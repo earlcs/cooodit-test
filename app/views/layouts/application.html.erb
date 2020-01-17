@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+  
+  <title><%= meta_title %></title>
+  <meta name="description" content="<%= meta_description %>">
+  
+  <!-- Facebook Open Graph data -->
+  <meta property="og:title" content="<%= meta_title %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<%= request.original_url %>" />
+  <meta property="og:image" content="<%= meta_image %>" />
+  <meta property="og:description" content="<%= meta_description %>" />
+  <meta property="og:site_name" content="<%= meta_title %>" />
+  
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>">
+  <meta name="twitter:title" content="<%= meta_title %>">
+  <meta name="twitter:description" content="<%= meta_description %>">
+  <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
+  <meta name="twitter:image:src" content="<%= meta_image %>">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon-16x16.png">
+  
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="0bf1dfe3-5a78-448b-9171-fbdb49528df6";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  </head>
+
+  <body>
+      <%= render 'layouts/navbar' %>
+    <%= yield %>
+    <%= render 'layouts/popupContact' %>
+    <%= render 'layouts/popupProgram' %>
+    <%= render 'layouts/footer' %>
+  </body>
+  <script src="https://kit.fontawesome.com/2b6f635bf2.js"></script>
+  
+</html>

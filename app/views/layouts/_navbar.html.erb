@@ -1,0 +1,116 @@
+<!-- header -->
+<header class="header-sticky header-dark">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="<%=root_path%>">
+        <img class="navbar-logo navbar-logo-light" src="../../assets/cooodit/test-logo.png" alt="Logo">
+        <img class="navbar-logo navbar-logo-dark" src="../../assets/cooodit/test-dark.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="burger"><span></span></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-center mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="<%=programs_path%>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PROGRAMMES
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="<%=hebdo_path%>">
+                <span >Ateliers Hebdomadaires</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="<%=deco_path%>">
+                <span>Ateliers Découverte</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="<%=bootcamp_path%>">
+                <span>Stages et Bootcamp</span>
+              </a>
+            </div>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="<%=campus_path%>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              CAMPUS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="<%=pontoise_path%>">
+                <span>Pontoise</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="<%=cergy_path%>">
+                <span>Cergy</span>
+              </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="<%=faq_path%>" role="button">
+              FAQ
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://cooodit.eventbrite.com" role="button">
+              EVENTS
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="<%=recrut_path%>" role="button">
+              RECRUTEMENT
+            </a>
+          </li>
+
+          <li class="nav-item">
+          <a class="nav-link" onclick="openContact(); on()" role="button">
+              CONTACT
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav align-items-center mr-0">
+            <li class="nav-item">
+            <button onclick="window.location.href = 'https://cooodit.typeform.com/to/sLbWVh';" type="button" class="btn btn-sm btn-rounded btn-primary text-white px-4"><strong>J&apos;inscris mon enfant </strong></button>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!--<div class="shadow-container"></div>-->
+
+</header>
+
+<!-- header -->
+<!-- Cookies -->
+
+<!--<div id="popUp">
+  <div id="close" class="close" onclick="closeNotif()"><i class="fa fa-times"></i></div>
+  <h2 style="font-size:15px;">Besoin d&apos;aide pour choisir le meilleur atelier pour votre enfant ? Laissez votre e-mail ci-dessous et nous vous contacterons rapidement.</h2>
+  
+  <div>
+    <label for="email" style="padding-left: 35px;">E-mail</label>
+    <center /><input type="email" class="form-control" id="email" name="email" placeholder="votre_email@mail.com" required/><br>
+    <center><button class="btn btn-primary">Envoyer</button></center>
+  </div>
+</div>-->
+
+<div id="cookie">
+  <div id="close" class="close" onclick="closeCookie()"><i class="fa fa-times"></i></div>
+  <center><h3>🍪</h3></center>
+  <div class="cookie-info">
+    En poursuivant votre navigation, <b>vous acceptez l&apos;utilisation des "cookies"</b> 
+    destinés à améliorer la performance de ce site, à en adapter les fonctionnalités <b>(<a href="<%=cookie_path%>">Plus d&apos;infos</a>)</b></a>
+  </div>
+  <center><b style="font-size:12px;"><a onclick="closeCookie()">Accepter</a> - <a onclick="closeCookie()">Refuser</a></b></center>
+</div>
+
+<!--<script>
+
+    // popUp appear after 60 seconds
+    $("#cookie").css('margin-bottom','-200px');
+    setTimeout(function(){
+      $('#cookie').css('margin-bottom','0px');
+    },60000);
+    
+</script>-->
+
+<!-- / Cookies -->
