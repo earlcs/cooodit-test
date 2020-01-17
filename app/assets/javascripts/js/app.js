@@ -363,7 +363,8 @@
 /* Formulaire de contact */
 
 function openContact(){
-  $("#contact_formulaire").css("top", "80px");
+  $("#contact_formulaire").css("top", "50%");
+  $("#contact_formulaire").css("left", "50%");
   /*document.getElementById("contact_formulaire").style.top="80px";*/
   /*$('#contact_formulaire').focus();*/
 }
@@ -377,7 +378,8 @@ function closeContact(){
  /* Formulaire Programme */
 
  function openProgram(){
-  $("#program_formulaire").css("top", "80px");
+  $("#program_formulaire").css("top", "50%");
+  $("#program_formulaire").css("left", "50%");
   /*document.getElementById("program_formulaire").style.top="80px";*/
 }
  
