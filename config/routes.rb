@@ -40,7 +40,6 @@ get "/ateliers-hebdomadaires-lycee", to: "pages#hebdo4", :as => 'hebdo4'
 get "/ateliers-hebdomadaires-ai", to: "pages#hebdo5", :as => 'hebdo5'
 get "/b2b", to: "pages#b2b", :as => 'b2b'
 
-
 match '(*any)', to: redirect(subdomain: ''), via: :all, constraints: {subdomain: 'www'}
 
 devise_for :users, :controllers => { sessions: 'user/sessions', registrations: 'user/registrations'}
