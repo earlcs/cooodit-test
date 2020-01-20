@@ -20323,12 +20323,16 @@ pre[class*="language-"] {
 /* Formualire de contact */
 
 .contact{
-  max-width : 100%;
+  max-width : 80%;
   margin : 0 auto;
-  width : 100%;
+  min-width : 100%;
   margin-left : 25%;
   padding-bottom: 40px;
 }
+
+/*.contact .list-unstyled{
+  max-width: 80%;
+}*/
 
 .contact-formul{
   color : #b2bec3;

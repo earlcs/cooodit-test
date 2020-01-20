@@ -70,12 +70,38 @@
             <li class="nav-item">
             <button onclick="window.location.href = 'https://cooodit.typeform.com/to/sLbWVh';" type="button" class="btn btn-sm btn-rounded btn-primary text-white px-4"><strong>J&apos;inscris mon enfant </strong></button>
             </li>
-            <li class="nav-item text-white">
-            <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="<%=programs_path%>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="<%=new_user_registration_path%>">
+                  <span >Créer un compte</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="<%=new_user_session_path%>">
+                  <span>Se connecter</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" role="button">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+
+            <!--<li class="nav-item text-white show">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fas fa-user"></i></a>
+            <ul id="menu-connexion" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="nav-link dropdown-item" href="<%=new_user_registration_path%>">Se connecter</a></li>
+              <li><a class="nav-link dropdown-item" href="<%=new_user_session_path%>">Créer un compte</a></li>
+            </ul>
             </li>
             <li class="nav-item text-white">
             <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-            </li>
+            </li>-->
         </ul>
       </div>
     </nav>

@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   
  
 
+  get 'static_pages/index'
+  get 'static_pages/secret'
+  #devise_for :users
   get 'pages/job'
   root 'home#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -37,7 +40,10 @@ get "/ateliers-hebdomadaires-lycee", to: "pages#hebdo4", :as => 'hebdo4'
 get "/ateliers-hebdomadaires-ai", to: "pages#hebdo5", :as => 'hebdo5'
 get "/b2b", to: "pages#b2b", :as => 'b2b'
 
+
 match '(*any)', to: redirect(subdomain: ''), via: :all, constraints: {subdomain: 'www'}
+
+devise_for :users, :controllers => { sessions: 'user/sessions', registrations: 'user/registrations'}
 
 
 end
